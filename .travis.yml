@@ -1,0 +1,10 @@
+dist: trusty
+language: rust
+
+script:
+  - cat /proc/cpuinfo
+
+matrix:
+  include:
+    - os: osx
+
