@@ -2,7 +2,7 @@ dist: trusty
 language: rust
 
 script:
-  - cat /proc/cpuinfo
+  - sysctl -a | grep machdep.cpu
 
 matrix:
   include:
